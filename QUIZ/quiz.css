@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Just Another Hand", cursive;
+}
+
+.conteudo {
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    width: auto; 
+    box-sizing: border-box;
+}
+
+:root {
+    --light-green: #E4E6D9;
+    --green: #C0CFB2;
+    --dark-green: #648A70;
+    --white: #fff;
+    --low-green: #45624E;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+ul li {
+    position: relative;
+    top: 90px;
+    left: -50px;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 10px; 
+    padding: 10px 34px;
+    margin-bottom: 0;
+    background: var(--green);
+    border-radius: 25px;
+    letter-spacing: 5px;
+}
+
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--white);
+
+}
+
+.logo-inicio{
+    position: relative;
+    z-index: 3;
+    top: 15rem;
+    left: 0.3125px;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    max-width: 120px;
+    width: auto;
+}
+
+.conteudos{
+    display: flex;
+    align-items: flex-start; 
+}
+
+.quiz{
+    font-size: 40px;
+    position: relative;
+    top: 9.375rem;
+    right: 2.8125px;
+    background: var(--light-green);
+    padding: 30px 25px;
+    margin: 10px 5px;
+    border-radius: 25px;
+    margin: 20px 0; 
+    margin-left: -1.25rem;
+    margin-bottom: 0;
+    display: inline-block;
+    z-index: 3;    
+}
+
+.menu{
+    position: relative;
+    top: 4.0625rem;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+    line-height: 1;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-login img {
+    width: 100%;
+    height: auto;
+}
+
+.imagens {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.titulo{
+    position: relative;
+    left: 80px;
+    z-index: 3;
+    display: grid;
+    font-size: 75px;
+    grid-area: 1 / 1;
+    height: auto;
+    margin-top: -160px;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr 1fr;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin-left: -47px;
+    color: var(--dark-green);
+}
+
+.primeiro-p{
+    position: relative;
+    margin-top: -40px;
+    bottom: 330px;
+    font-size: 30px;
+    color: var(--dark-green);
+    list-style: none;
+}
+
+.segundo-p{
+    position: relative;
+    margin-left: 170px;
+    margin-top: 10px;
+    bottom: 270px;
+    font-size: 30px;
+    color: var(--dark-green);
+    list-style: none;
+}
+
+.botoes {
+    position: relative;
+    top: -130px; 
+    left: 130px;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    font-size: 30px;
+}
+
+.botao-1 {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 100px;
+    text-decoration: none;
+    border-radius: 35px;
+    transition: background-color 0.3s;
+    background-color: var(--green);
+    color: var(--dark-green);
+}
+
+
+
+
+.fundo {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+.fundo2 {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.fundo3{
+    grid-area: 1 / 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+}

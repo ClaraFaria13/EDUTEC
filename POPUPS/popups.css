@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Just Another Hand", cursive;
+}
+
+.conteudo {
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    width: auto; 
+    box-sizing: border-box;
+}
+
+:root {
+    --light-green: #E4E6D9;
+    --green: #C0CFB2;
+    --dark-green: #648A70;
+    --white: #fff;
+    --low-green: #45624E;
+}
+
+h1 {
+    position: relative;
+    top: -725px; 
+    left: 24%; 
+    transform: translate(-50%, -50%); 
+    z-index: 3;
+    padding: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: var(--dark-green);
+}
+
+p{
+    position: relative;
+    top: -735px; 
+    left: 24%; 
+    transform: translate(-50%, -50%); 
+    z-index: 3;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: var(--dark-green);
+}
+
+button{
+    position: relative;
+    top: -750px; 
+    left: 17.5%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+    margin: 10px;
+    padding: 2px 70px;
+    text-decoration: none;
+    border-radius: 35px;
+    transition: background-color 0.3s;
+    background-color: var(--green);
+    color: var(--dark-green);
+    border: none;
+}
+
+.fundo {
+    width: 50%;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.fundo2{
+    position: relative;
+    top: -420px;
+    padding: 20px 20px;
+    left: 30px;
+    width: 45%;
+    height: auto;
+    z-index: 2;
+    margin-bottom: 0;
+}

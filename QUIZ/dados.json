@@ -1,0 +1,42 @@
+{
+    "quizzes": [
+        {
+            "tittle": "Quiz",
+            "questions": [
+                {
+                    "question": "Por que a natureza é essencial para a vida na Terra?",
+                    "options": [
+                        "Porque fornece apenas um local bonito para recreação.",
+                        "Porque é fundamental para a produção de alimentos, fornecimento de oxigênio, regulação",
+                        "Porque é uma fonte ilimitada de recursos que nunca se esgotam.",
+                        "Porque não tem impacto significativo na vida humana."
+                    ],
+                    "answer": "Porque é fundamental para a produção de alimentos, fornecimento de oxigênio, regulação"
+                },
+                {
+                    "question": "O que é zoologia?",
+                    "options": [
+                        "O estudo das plantas e suas interações com o ambiente.",
+                        "O estudo dos astros e do universo.",
+                        "O estudo dos animais e seu comportamento.",
+                        "O estudo dos minerais e rochas."
+                    ],
+                    "answer": "O estudo dos animais e seu comportamento."
+                },
+                {
+                    "question": "Qual é um obstáculo importante na proteção de plantas contra pragas e doenças?",
+                    "options": [
+                        "Baixa resistência das plantas às mudanças climáticas",
+                        "Desenvolvimento de resistência das pragas aos pesticidas",
+                        "Alto custo dos métodos de controle biológico",
+                        "Facilidade de detecção de doenças nas plantas"
+                    ],
+                    "answer": "Facilidade de detecção de doenças nas plantas"
+                },
+                {
+                    "question": ""
+                }
+            ]
+        }
+    ]
+}

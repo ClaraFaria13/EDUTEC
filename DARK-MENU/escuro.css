@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Just Another Hand", cursive;
+}
+
+body {
+    background-color: var(--low-green);
+}
+
+.conteudo {
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    width: auto; 
+    box-sizing: border-box;
+}
+
+:root {
+    --light-green: #E4E6D9;
+    --green: #C0CFB2;
+    --dark-green: #648A70;
+    --white: #fff;
+    --low-green: #45624E;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+ul li {
+    position: relative;
+    top: 90px;
+    left: -50px;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 10px; 
+    padding: 10px 30px;
+    margin-bottom: 0;
+    background: var(--dark-green);
+    border-radius: 25px;
+    letter-spacing: 5px;
+}
+
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--white);
+
+}
+
+.logo-inicio{
+    position: relative;
+    z-index: 3;
+    top: 240px;
+    left: 5px;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    max-width: 120px;
+    width: auto;
+}
+
+.conteudos{
+    display: flex;
+    align-items: flex-start; 
+    padding: 0;
+    margin: 0;
+}
+
+.inicio{
+    font-size: 40px;
+    position: relative;
+    top: 140px;
+    left: -80px;
+    background: var(--dark-green);
+    padding: 30px 35px;
+    margin: 10px 5px;
+    border-radius: 25px;
+    margin: 20px 0; 
+    margin-left: -20px;
+    margin-bottom: 0;
+    display: inline-block;
+    z-index: 3;    
+}
+
+.menu{
+    position: relative;
+    top: 65px;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+    line-height: 1;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-login img {
+    width: 100%;
+    height: auto;
+}
+
+.imagens {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.titulo{
+    position: relative;
+    top: -200px; 
+    left: 20%; 
+    transform: translate(-50%, -50%); 
+    z-index: 7;
+    padding: 10px; 
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--light-green);
+}
+
+.sombra {
+    position: absolute;
+    top: 35%;
+    bottom: 0;
+    left: 0;
+    right: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    opacity: 0.6;
+    z-index: 4;
+ 
+}
+
+.animais{
+    max-width: 700px;
+    width: auto;
+    position: absolute;
+    top: 35%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42%;
+    height: auto;
+    z-index: 5;
+}
+
+.animais2{
+    max-width: 700px;
+    width: auto;
+    position: absolute;
+    top: 43%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42%;
+    height: auto;
+    z-index: 6;
+}
+
+.botoes {
+    position: relative;
+    top: -250px; 
+    left: 13%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    font-size: 30px;
+}
+
+.botao {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 100px;
+    text-decoration: none;
+    border-radius: 35px;
+    transition: background-color 0.3s;
+    background-color: var(--low-green);
+    color: var(--white);
+}
+
+.fundo {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+.fundo2 {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+}
