@@ -140,9 +140,57 @@ nav a {
 }
 
 .lista{
+    position: relative;
+    margin-top: -50px;
+    margin-left: 1050px;
+    right: 520px;
+    padding: 7px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    bottom: 100px;
     font-size: 30px;
-    margin-left: 250px;
+    letter-spacing: 4px;
     list-style: none;
+    color: var(--dark-green);
+    background-color: var(--green);
+}
+
+.p1{
+    position: relative;
+    margin-top: -30px;
+    margin-left: 200px;
+    bottom: 50px;
+    font-size: 45px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    color: var(--dark-green);
+}
+
+.p2{
+    position: relative;
+    margin-top: -60px;
+    margin-left: 560px;
+    bottom: 30px;
+    font-size: 35px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    color: var(--dark-green);
+}
+
+.botao-1{
+    position: relative;
+    font-size: 20px;
+    right: -560px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 100px;
+    text-decoration: none;
+    border-radius: 35px;
+    transition: background-color 0.3s;
+    border: none;
+    background-color: var(--green);
+    color: var(--dark-green); 
 }
 
 .fundo {
