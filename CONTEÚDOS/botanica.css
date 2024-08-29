@@ -184,6 +184,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .logo-inicio-2{
@@ -287,6 +288,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-3{
@@ -303,6 +305,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .terceiro{
@@ -375,6 +378,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-5{
@@ -391,6 +395,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-seta{
@@ -406,6 +411,7 @@ nav a {
     color: var(--dark-green);
     background-color: var(--green);
     margin-top: -20px;
+    cursor: pointer;
 }
 
 .quarto{
@@ -528,6 +534,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-seta-2{
@@ -542,6 +549,7 @@ nav a {
     color: var(--dark-green);
     background-color: var(--green);
     margin-top: -20px;
+    cursor: pointer;
 }
 
 .botao-seta-3{
@@ -556,6 +564,7 @@ nav a {
     color: var(--dark-green);
     background-color: var(--green);
     margin-top: -20px;
+    cursor: pointer;
 }
 
 .botao-7{
@@ -572,6 +581,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .quinto{
@@ -666,6 +676,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-9{
@@ -682,6 +693,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-seta-4{
@@ -696,6 +708,7 @@ nav a {
     color: var(--dark-green);
     background-color: var(--green);
     margin-top: -20px;
+    cursor: pointer;
 }
 
 .botao-seta-5{
@@ -710,6 +723,7 @@ nav a {
     color: var(--dark-green);
     background-color: var(--green);
     margin-top: -20px;
+    cursor: pointer;
 }
 
 .sexto{
@@ -801,6 +815,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-11{
@@ -817,6 +832,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-seta-6{
@@ -831,6 +847,7 @@ nav a {
     color: var(--dark-green);
     background-color: var(--green);
     margin-top: -20px;
+    cursor: pointer;
 }
 
 .setimo{
@@ -927,6 +944,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-13{
@@ -943,6 +961,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-seta-7{
@@ -957,6 +976,7 @@ nav a {
     color: var(--dark-green);
     background-color: var(--green);
     margin-top: -20px;
+    cursor: pointer;
 }
 
 .oitavo{
@@ -1042,6 +1062,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-15{
@@ -1058,6 +1079,7 @@ nav a {
     background-color: var(--green);
     margin-top: 5px;
     margin-bottom: -20px;
+    cursor: pointer;
 }
 
 .botao-seta-8{
@@ -1072,6 +1094,7 @@ nav a {
     color: var(--dark-green);
     background-color: var(--green);
     margin-top: -20px;
+    cursor: pointer;
 }
 
 .nono{
@@ -1148,6 +1171,7 @@ nav a {
     margin-right: 35px;
     color: var(--dark-green);
     background-color: var(--green);
+    cursor: pointer;
 }
 
 .botao-17{
@@ -1162,6 +1186,7 @@ nav a {
     margin-right: 35px;
     color: var(--dark-green);
     background-color: var(--green);
+    cursor: pointer;
 }
 
 .fundo {

@@ -34,7 +34,124 @@
                     "answer": "Facilidade de detecção de doenças nas plantas"
                 },
                 {
-                    "question": ""
+                    "question": "O que é considerado um elemento abiótico na natureza?",
+                    "options": [
+                        "Animais e plantas",
+                        "Sol e água",
+                        "Microrganismos e ecossistemas",
+                        "Predadores e presas"
+                    ],
+                    "answer": "Sol e água"
+                },
+                {
+                    "question": "Qual área da zoologia se concentra no estudo do desenvolvimento dos organismos desde a fertilização até o nascimento?",
+                    "options": [
+                        "Genética Animal",
+                        "Ecologia Animal",
+                        "Embriologia",
+                        " Ornitologia"
+                    ],
+                    "answer": "Embriologia"
+                },
+                {
+                    "question": "O que é estudado na área da Paleobotânica?",
+                    "options": [
+                        "A genética das plantas modernas",
+                        "As relações entre fungos e plantas",
+                        "As plantas fósseis e a evolução das plantas antigas",
+                        "A interação das plantas com animais herbívoros"
+                    ],
+                    "answer": "Embriologia"
+                },
+                {
+                    "question": "",
+                    "options": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "answer": ""
+                },
+                {
+                    "question": "",
+                    "options": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "answer": ""
+                },
+                {
+                    "question": "",
+                    "options": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "answer": ""
+                },
+                {
+                    "question": "",
+                    "options": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "answer": ""
+                },
+                {
+                    "question": "",
+                    "options": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "answer": ""
+                },
+                {
+                    "question": "",
+                    "options": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "answer": ""
+                },
+                {
+                    "question": "",
+                    "options": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "answer": ""
+                },
+                {
+                    "question": "",
+                    "options": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "answer": ""
+                },
+                {
+                    "question": "",
+                    "options": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "answer": ""
                 }
             ]
         }

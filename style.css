@@ -205,6 +205,7 @@ nav a {
     transition: background-color 0.3s;
     background-color: var(--green);
     color: var(--dark-green);
+    cursor: pointer;
 }
 
 .fundo {

@@ -170,10 +170,11 @@ nav a {
     border: none;
     border-radius: 15px;
     letter-spacing: 2px;
+    cursor: pointer;
     margin-right: 35px;
     color: var(--dark-green);
     background-color: var(--green);
-    margin-top: 5px;
+    margin-top: -20px;
     margin-bottom: -20px;
 }
 
@@ -305,6 +306,7 @@ nav a {
     background-color: var(--green);
     margin-top: -20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .botao-3{
@@ -319,6 +321,7 @@ nav a {
     background-color: var(--green);
     margin-top: -20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .terceiro {
@@ -370,7 +373,7 @@ nav a {
     display: flex;
     flex-direction: column;
     padding: 5px 50px;
-    margin-top: -580px;
+    margin-top: -610px;
     margin-bottom: 120px;
     color: var(--dark-green);
 }
@@ -386,6 +389,7 @@ nav a {
     margin-right: 35px;
     color: var(--dark-green);
     background-color: var(--green);
+    cursor: pointer;
     margin-top: -20px;
     margin-bottom: 20px;
 }
@@ -401,6 +405,7 @@ nav a {
     margin-right: 35px;
     color: var(--dark-green);
     background-color: var(--green);
+    cursor: pointer;
     margin-top: -20px;
     margin-bottom: 20px;
 }
@@ -484,6 +489,7 @@ nav a {
     background-color: var(--green);
     margin-bottom: 25px;
     margin-top: 100px;
+    cursor: pointer;
 }
 
 .botao-7{
@@ -495,6 +501,7 @@ nav a {
     margin-right: 35px;
     color: var(--dark-green);
     background-color: var(--green);
+    cursor: pointer;
     
 }
 
@@ -527,10 +534,9 @@ nav a {
 .img-7{
     position: relative;
     left: 130px;
-    top: 520px;
     max-width: 350px;
     margin-right: 400px;
-    margin-bottom: 460px;
+    margin-bottom: -50px;
 }
 
 .img-8{
@@ -558,7 +564,7 @@ nav a {
 
 .botao-8{
     position: relative;
-    top: 70px;
+    top: 50px;
     right: 570px;
     padding: 5px 80px;
     font-size: 27px;
@@ -568,12 +574,13 @@ nav a {
     color: var(--dark-green);
     background-color: var(--green);
     margin-bottom: -100px;
+    cursor: pointer;
 }
 
 .botao-9{
     position: relative;
+    top: 14px;
     left: 250px;
-    top: 35px;
     padding: 5px 80px;
     font-size: 27px;
     border: none;
@@ -582,4 +589,5 @@ nav a {
     margin-right: 35px;
     color: var(--dark-green);
     background-color: var(--green);
+    cursor: pointer;
 }
