@@ -5,6 +5,14 @@
     font-family: "Just Another Hand", cursive;
 }
 
+body{
+    background: var(--white);
+    transition: 0.2s linear;
+}
+
+body.escuro{
+    background: var(--low-greenb);
+}
 .conteudo {
     max-width: 1440px; 
     margin: 0 auto; 
@@ -19,6 +27,8 @@
     --dark-green: #648A70;
     --white: #fff;
     --low-green: #45624E;
+    --low-greenb: rgb(69, 98, 78, 0.6);
+
 }
 
 header {
@@ -50,6 +60,9 @@ ul li {
     letter-spacing: 5px;
 }
 
+.escuro ul li {
+    background: var(--dark-green);
+}
 
 nav a {
     text-decoration: none;
@@ -95,6 +108,10 @@ nav a {
     z-index: 3;    
 }
 
+.inicio.escuro{
+    background: var(--dark-green);
+}
+
 .menu{
     position: relative;
     top: 65px;
@@ -111,6 +128,15 @@ nav a {
 .menu-login img {
     width: 100%;
     height: auto;
+}
+
+.menu-items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 350px;
+    right: 70px;
+    z-index: 4;
 }
 
 .imagens {
@@ -131,6 +157,11 @@ nav a {
     font-weight: 300;
     letter-spacing: 2px;
     color: var(--light-green);
+}
+
+.escuro .titulo{
+    color: var(--white);
+    transition: 0.2s linear;
 }
 
 .sombra {
@@ -200,6 +231,11 @@ nav a {
     transition: background-color 0.3s;
     background-color: var(--green);
     color: var(--dark-green);
+}
+
+.escuro .botao{
+    background-color: var(--low-green);
+    color: var(--white);
 }
 
 .fundo {

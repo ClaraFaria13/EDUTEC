@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
     <title>Biotvida - Biologia & Zoologia terrestre</title>
 </head>
 <body>
@@ -26,29 +27,30 @@
                 </ul>
             </nav>
             <div class="menu-login">
-                <button class="menu"><img src="IMG/menu.png" alt="Menu"></button>
+                <button id="hamburger" class="menu"><img src="IMG/menu.png" alt="Menu"></button>
+                <div class="menu-items">
+                    <button id="Ver-botoes" class="confi">Configurações</button>
+                    <button id="escuro" class="aceso/apagado">Light/Dark - Mode</button>
+                </div>
             </div>
         </header>
 
         <main>
             <section class="site">
                 <div class="imagens">
-                    <img src="IMG/Fundo.png" alt="" class="fundo">
-                    <img src="IMG/Fundo2.png" alt="" class="fundo2">
+                    <img id="img-clara" src="IMG/Fundo.png" alt="" class="fundo">
+                    <img id="img-clara2" src="IMG/Fundo2.png" alt="" class="fundo2">
                 </div>
                 <div class="sobre-titulo">
                     <h1 class="titulo">B i o l o g i a  & <br> Z o o l o g i a  T e r r e s t r e</h1>
                 </div>
                 <div class="botoes">
-                    <a href="./CONTEÚDOS/conteudo.html" class="botao">Começar</a>
+                    <button class="botao" onclick="navegarPara('../CONTEÚDOS/conteudo.html')">Começar</button>
                 </div>
                 <div class="animais-sombra">
-                    <img class="animais" src="IMG/animais.png" alt="">
-                    <img class="animais2" src="IMG/animais2.png" alt="">
-                    <img class="sombra" src="IMG/sombra.png" alt="">
+                    <img id="img-ani" class="animais" src="IMG/animais.png" alt="">
+                    <img id="img-ani2" class="animais2" src="IMG/animais2.png" alt="">
                 </div>
-                <a href="./POPUPS/popups.html">P</a>
-                <a href="./DARK-MENU/escuro.html">DK</a>
             </section>
         </main>
     </div>

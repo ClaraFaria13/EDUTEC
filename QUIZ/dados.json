@@ -61,97 +61,97 @@
                         "As plantas fósseis e a evolução das plantas antigas",
                         "A interação das plantas com animais herbívoros"
                     ],
-                    "answer": "Embriologia"
+                    "answer": "As plantas fósseis e a evolução das plantas antigas"
                 },
                 {
-                    "question": "",
+                    "question": "Por que a conservação da natureza é fundamental?",
                     "options": [
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Para reduzir a produção de alimentos",
+                        "Para garantir a saúde e o bem-estar do planeta e de todas as formas de vida",
+                        "Para aumentar a urbanização e o desenvolvimento industrial",
+                        "Para promover o uso ilimitado de recursos naturais"
                     ],
-                    "answer": ""
+                    "answer": "Para garantir a saúde e o bem-estar do planeta e de todas as formas de vida"
                 },
                 {
-                    "question": "",
+                    "question": "Como a zoologia pode contribuir para o bem-estar humano?",
                     "options": [
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Apenas através do estudo de insetos",
+                        "Desenvolvendo tecnologias que beneficiem os seres humanos",
+                        "Focando exclusivamente na extinção de espécies",
+                        "Eliminando todos os predadores naturais"
                     ],
-                    "answer": ""
+                    "answer": "Desenvolvendo tecnologias que beneficiem os seres humanos"
                 },
                 {
-                    "question": "",
+                    "question": "Como a biotecnologia é utilizada na botânica?",
                     "options": [
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Para aumentar a poluição nas áreas urbanas",
+                        "Para desenvolver novos métodos de extração de plantas",
+                        "Para melhorar geneticamente as plantas e aumentar sua resistência",
+                        "Para destruir ecossistemas naturais"
                     ],
-                    "answer": ""
+                    "answer": "Para melhorar geneticamente as plantas e aumentar sua resistência"
                 },
                 {
-                    "question": "",
+                    "question": "Qual é a definição de ecossistema?",
                     "options": [
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Apenas uma coleção de plantas e animais em um local",
+                        "Um grupo de elementos abióticos que influenciam a vida",
+                        "Comunidades de organismos que interagem entre si e com o ambiente",
+                        "Somente corpos d'água, como rios e oceanos"
                     ],
-                    "answer": ""
+                    "answer": "Comunidades de organismos que interagem entre si e com o ambiente"
                 },
                 {
-                    "question": "",
+                    "question": "Qual é o objetivo principal da parasitologia dentro da zoologia?",
                     "options": [
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Estudar a hereditariedade dos animais",
+                        "Investigar o comportamento dos predadores",
+                        "Analisar os parasitas e suas relações com os hospedeiros",
+                        "Examinar as adaptações dos animais aquáticos"
                     ],
-                    "answer": ""
+                    "answer": "Analisar os parasitas e suas relações com os hospedeiros"
                 },
                 {
-                    "question": "",
+                    "question": "Qual é a importância da botânica para a alimentação humana?",
                     "options": [
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Melhorar as técnicas de pesca",
+                        "Desenvolver alimentos sintéticos",
+                        "Estudar as plantas cultivadas para melhorar a qualidade e a quantidade dos alimentos",
+                        "Investigar a genética dos animais"
                     ],
-                    "answer": ""
+                    "answer": "Estudar as plantas cultivadas para melhorar a qualidade e a quantidade dos alimentos"
                 },
                 {
-                    "question": "",
+                    "question": "O que a sustentabilidade busca promover?",
                     "options": [
-                        "",
-                        "",
-                        "",
-                        ""
+                        "A destruição de habitats naturais",
+                        "O uso consciente e responsável dos recursos naturais",
+                        "A extinção de espécies animais e vegetais",
+                        "A poluição do ar e da água"
                     ],
-                    "answer": ""
+                    "answer": "O uso consciente e responsável dos recursos naturais"
                 },
                 {
-                    "question": "",
+                    "question": "Como a zoologia enfrenta a degradação ambiental?",
                     "options": [
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Promovendo o uso intensivo de recursos",
+                        "Poluindo ambientes naturais",
+                        "Desenvolvendo políticas e legislação para conservação",
+                        "Incentivando o desmatamento para fins agrícolas"
                     ],
-                    "answer": ""
+                    "answer": "Desenvolvendo políticas e legislação para conservação"
                 },
                 {
-                    "question": "",
+                    "question": "O que a exploração descontrolada pode causar no contexto botânico?",
                     "options": [
-                        "",
-                        "",
-                        "",
-                        ""
+                        "Aumento da biodiversidade",
+                        "Proteção natural das plantas",
+                        "Fragmentação de habitats e perda de biodiversidade",
+                        "Expansão de florestas nativas"
                     ],
-                    "answer": ""
+                    "answer": "Fragmentação de habitats e perda de biodiversidade"
                 }
             ]
         }

@@ -125,7 +125,7 @@ nav a {
     font-size: 75px;
     grid-area: 1 / 1;
     height: auto;
-    margin-top: -160px;
+    margin-top: -200px;
     margin-bottom: 10px;
     grid-template-columns: 1fr 1fr;
     letter-spacing: 4px;
@@ -136,9 +136,9 @@ nav a {
 
 .primeiro-p{
     position: relative;
-    margin-top: -40px;
-    bottom: 330px;
+    margin-top: -150px;
     font-size: 30px;
+    bottom: 150px;
     color: var(--dark-green);
     list-style: none;
 }
@@ -146,8 +146,7 @@ nav a {
 .segundo-p{
     position: relative;
     margin-left: 170px;
-    margin-top: 10px;
-    bottom: 270px;
+    bottom: 50px;
     font-size: 30px;
     color: var(--dark-green);
     list-style: none;
@@ -155,7 +154,7 @@ nav a {
 
 .botoes {
     position: relative;
-    top: -130px; 
+     
     left: 130px;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -178,7 +177,8 @@ nav a {
     grid-area: 1 / 1;
     width: 100%;
     height: auto;
-    display: block
+    display: block;
+    margin-bottom: -50px;
 }
 
 .fundo2 {
@@ -187,6 +187,7 @@ nav a {
     height: auto;
     display: block;
     margin-top: 50px;
+    margin-bottom: -50px;
 }
 
 .fundo3{
@@ -195,4 +196,5 @@ nav a {
     height: auto;
     display: block;
     margin-top: 50px;
+    margin-bottom: -50px;
 }

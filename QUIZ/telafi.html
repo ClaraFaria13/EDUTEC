@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <script src="./telafi.js" defer></script>
     <title>Biotvida - Biologia & Zoologia terrestre</title>
 </head>
 <body>
@@ -42,16 +43,16 @@
 
             <p class="p1">Seu desempenho:</p>
             <ol class="lista">
-                <li>Perguntas corretas: 13</li>
+                <li id="correctAnswers">Perguntas corretas: 13</li>
                 <br>
-                <li>Perguntas erradas: 2</li>
+                <li id="incorrectAnswers">Perguntas erradas: 2</li>
                 <br>
-                <li>Pontuação final: 80%</li>
+                <li id="scorePercentage">Pontuação final: 80%</li>
             </ol>
         
             <p class="p2">Quer tentar novamente?</p>
 
-            <button class="botao-1">Recomeçar</button>
+            <button class="botao-1" onclick="navegarPara('./tela1.html')">Recomeçar</button>
         </section>
     </div>
 </body>

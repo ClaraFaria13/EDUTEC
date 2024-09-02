@@ -136,7 +136,7 @@ nav a {
     letter-spacing: 2px;
     display: flex;
     padding: 10px 90px;
-    bottom: -40px;
+    bottom: -60px;
     left: -400px;
     margin-left: 850px;
     margin-top: -450px;
@@ -157,7 +157,7 @@ nav a {
     bottom: -40px;
     left: -800px;
     margin-left: 850px;
-    margin-top: 20px;
+    margin-top: 50px;
     color: var(--dark-green);
     background-color: var(--green);
     font-weight: 300;
@@ -222,6 +222,16 @@ nav a {
     border: none;
 }
 
+.correct {
+    background-color: var(--low-green);
+    color: white;
+}
+
+.incorrect {
+    background-color: var(--red);
+    color: white;
+}
+
 .botao-1:hover{
     background-color: var(--low-green);
     transition: 0.2s;
@@ -257,7 +267,7 @@ nav a {
     bottom: 30px;
     max-width: 500px;
     margin-left: 810px;
-    margin-top: -350px;
+    margin-top: -200px;
     margin-right: -70px;
 }
 
