@@ -31,22 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var menuItems = document.getElementById("menu-items");
   var configButton = document.getElementById("Ver-botoes");
   var darkModeButton = document.getElementById("escuro");
-
-  hamburger.addEventListener("click", function() {
-      if (menuItems.style.display === "block") {
-          menuItems.style.display = "none";
-      } else {
-          menuItems.style.display = "block";
-      }
-  });
-
-  configButton.addEventListener("click", function() {
-      if (darkModeButton.style.display === "block") {
-          darkModeButton.style.display = "none";
-      } else {
-          darkModeButton.style.display = "block";
-      }
-  });
 });
 
 

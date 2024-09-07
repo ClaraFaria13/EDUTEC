@@ -112,31 +112,26 @@ nav a {
     background: var(--dark-green);
 }
 
-.menu{
+.menu-items {
     position: relative;
-    top: 65px;
-    display: inline-block;
-    width: 110px;
-    height: 110px;
-    padding: 10px;
-    line-height: 1;
+    top: 100px;
+    left: -10px;
+    
+}
+
+.aceso-apagado{
     border: none;
-    background: none;
-    cursor: pointer;
+    font-size: 10px;
+    background: var(--green);
+    color: var(--white);
+    letter-spacing: 5px;
+    padding: 15px 5px;
+    border-radius: 25px;
 }
 
-.menu-login img {
-    width: 100%;
-    height: auto;
-}
-
-.menu-items{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    top: 350px;
-    right: 70px;
-    z-index: 4;
+.escuro .aceso-apagado{
+    background: var(--dark-green);
+    color: var(--white);
 }
 
 .imagens {
