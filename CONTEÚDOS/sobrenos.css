@@ -16,12 +16,35 @@
     height: 100vh;
 }
 
+body{
+    background: var(--white);
+    transition: 0.2s linear;
+}
+
+body.escuro{
+    background: var(--low-greenb);
+}
+
+.escuro ul li {
+    background: var(--dark-green);
+}
+
+.inicio.escuro{
+    background: var(--dark-green);
+}
+
+.escuro .botao-1{
+    background-color: var(--low-green);
+    color: var(--white);
+}
+
 :root {
     --light-green: #E4E6D9;
     --green: #C0CFB2;
     --dark-green: #648A70;
     --white: #fff;
     --low-green: #45624E;
+    --low-greenb: rgb(69, 98, 78, 0.6);
 }
 
 header {
@@ -96,28 +119,41 @@ nav a {
     z-index: 3;    
 }
 
-.menu{
+.menu-items {
     position: relative;
-    top: 4.0625rem;
-    display: inline-block;
-    width: 110px;
-    height: 110px;
-    padding: 10px;
-    line-height: 1;
+    top: 100px;
+    left: -10px;
+    
+}
+
+.aceso-apagado{
     border: none;
-    background: none;
+    font-size: 10px;
+    background: var(--green);
+    color: var(--white);
+    letter-spacing: 5px;
+    padding: 15px 5px;
+    border-radius: 25px;
     cursor: pointer;
 }
 
-.menu-login img {
-    width: 100%;
-    height: auto;
+.escuro .aceso-apagado{
+    background: var(--dark-green);
+    color: var(--white);
 }
 
 .imagens {
     display: grid;
     place-items: center;
     width: 100%;
+}
+
+.escuro .primeiro{
+    color: var(--white);
+}
+
+.escuro .primeiro-p{
+    color: var(--white);
 }
 
 .links{
@@ -138,6 +174,10 @@ nav a {
     z-index: 3; 
 }
 
+.escuro .um{
+    background: var(--low-green);
+}
+
 .dois{
     position: relative;
     top: 20px;
@@ -149,6 +189,10 @@ nav a {
     margin-bottom: 0;
     display: inline-block;
     z-index: 3; 
+}
+
+.escuro .dois{
+    background: var(--low-green);
 }
 
 .tres{
@@ -164,6 +208,10 @@ nav a {
     z-index: 3; 
 }
 
+.escuro .tres{
+    background: var(--low-green);
+}
+
 .quatro{
     position: relative;
     top: 20px;
@@ -175,6 +223,10 @@ nav a {
     margin-bottom: 0;
     display: inline-block;
     z-index: 3; 
+}
+
+.escuro .quatro{
+    background: var(--low-green);
 }
 
 .quinto{
@@ -190,6 +242,10 @@ nav a {
     z-index: 3; 
 }
 
+.escuro .quinto{
+    background: var(--low-green);
+}
+
 .nomes{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -197,6 +253,10 @@ nav a {
     margin-top: -200px;
     margin-left: 140px;
     font-size: 25px;
+}
+
+.escuro .nomes{
+    color: var(--white);
 }
 
 .icones{

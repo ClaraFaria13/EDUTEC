@@ -13,12 +13,35 @@
     box-sizing: border-box;
 }
 
+body{
+    background: var(--white);
+    transition: 0.2s linear;
+}
+
+body.escuro{
+    background: var(--low-greenb);
+}
+
+.escuro ul li {
+    background: var(--dark-green);
+}
+
+.inicio.escuro{
+    background: var(--dark-green);
+}
+
+.escuro .botao-1{
+    background-color: var(--low-green);
+    color: var(--white);
+}
+
 :root {
     --light-green: #E4E6D9;
     --green: #C0CFB2;
     --dark-green: #648A70;
     --white: #fff;
     --low-green: #45624E;
+    --low-greenb: rgb(69, 98, 78, 0.6);
 }
 
 header {
@@ -93,28 +116,53 @@ nav a {
     z-index: 3;    
 }
 
-.menu{
+.menu-items {
     position: relative;
-    top: 4.0625rem;
-    display: inline-block;
-    width: 110px;
-    height: 110px;
-    padding: 10px;
-    line-height: 1;
-    border: none;
-    background: none;
-    cursor: pointer;
+    top: 100px;
+    left: -10px;
+    
 }
 
-.menu-login img {
-    width: 100%;
-    height: auto;
+.aceso-apagado{
+    border: none;
+    font-size: 10px;
+    background: var(--green);
+    color: var(--white);
+    letter-spacing: 5px;
+    padding: 15px 5px;
+    border-radius: 25px;
+}
+
+.escuro .aceso-apagado{
+    background: var(--dark-green);
+    color: var(--white);
 }
 
 .imagens {
     display: grid;
     place-items: center;
     width: 100%;
+}
+
+.escuro .titulo{
+    color: var(--white);
+}
+
+.escuro .titulo-2{
+    color: var(--white);
+}
+
+.escuro .lista{
+    color: var(--white);
+    background-color: var(--low-greenb);
+}
+
+.escuro .p1{
+    color: var(--white);
+}
+
+.escuro .p2{
+    color: var(--white);
 }
 
 .titulo{
@@ -215,4 +263,8 @@ nav a {
     height: auto;
     display: block;
     margin-top: 50px;
+}
+
+.escuro .fundo3{
+    opacity: 30%;
 }

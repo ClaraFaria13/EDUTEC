@@ -45,6 +45,7 @@ body.escuro{
     --dark-green: #648A70;
     --white: #fff;
     --low-green: #45624E;
+    --low-greenb: rgb(69, 98, 78, 0.6);
 }
 
 header {
@@ -65,7 +66,7 @@ ul{
 ul li {
     position: relative;
     top: 90px;
-    left: -50px;
+    left: -70px;
     font-size: 30px;
     display: inline-block;
     margin: 0 10px; 
@@ -106,8 +107,7 @@ nav a {
 .natureza{
     font-size: 40px;
     position: relative;
-    top: 9.375rem;
-    right: 2.8125px;
+    top: 140px;
     background: var(--light-green);
     padding: 30px 25px;
     margin: 10px 5px;
@@ -119,28 +119,40 @@ nav a {
     z-index: 3;    
 }
 
-.menu{
+.menu-items {
     position: relative;
-    top: 4.0625rem;
-    display: inline-block;
-    width: 110px;
-    height: 110px;
-    padding: 10px;
-    line-height: 1;
-    border: none;
-    background: none;
-    cursor: pointer;
+    top: 100px;
+    left: -10px;
+    
 }
 
-.menu-login img {
-    width: 100%;
-    height: auto;
+.aceso-apagado{
+    border: none;
+    font-size: 10px;
+    background: var(--green);
+    color: var(--white);
+    letter-spacing: 5px;
+    padding: 15px 5px;
+    border-radius: 25px;
+}
+
+.escuro .aceso-apagado{
+    background: var(--dark-green);
+    color: var(--white);
 }
 
 .imagens {
     display: grid;
     place-items: center;
     width: 100%;
+}
+
+.escuro .primeiro{
+    color: var(--white);
+}
+
+.escuro .primeiro-p{
+    color: var(--white);
 }
 
 .primeiro{
@@ -232,6 +244,35 @@ nav a {
     margin-top: -100px;
 }
 
+.escuro .segundo{
+    color: var(--white);
+}
+
+.escuro .segundo-p{
+    color: var(--white);
+}
+.escuro .terceiro-p{
+    color: var(--white);
+}
+
+.escuro .quarto-p{
+    color: var(--white);
+}
+
+.escuro .quinto-p{
+    color: var(--white);
+    background-color: var(--low-green);
+}
+
+.escuro .botao-2{
+    color: var(--white);
+    background: var(--low-green);
+}
+.escuro .botao-3{
+    color: var(--white);
+    background: var(--low-green);
+}
+
 .segundo {
     z-index: 3;
     display: grid;
@@ -285,7 +326,7 @@ nav a {
     display: flex;
     padding: 15px 90px;
     bottom: 45px;
-    left: -2px;
+    left: -10px;
     margin-left: 850px;
     margin-top: -420px;
     background-color: var(--green);
@@ -354,6 +395,30 @@ nav a {
     display: block;
     margin-top: -60px;
     margin-bottom: -30px;
+}
+
+.escuro .terceiro{
+    color: var(--white);
+}
+
+.escuro .terceiro-2{
+    color: var(--white);
+}
+
+.escuro .sexto-p{
+    color: var(--white);
+}
+
+.escuro .lista{
+    color: var(--white);
+}
+.escuro .botao-4{
+    color: var(--white);
+    background: var(--low-green);
+}
+.escuro .botao-5{
+    color: var(--white);
+    background: var(--low-green);
 }
 
 .terceiro {
@@ -458,6 +523,26 @@ nav a {
     display: block;
     margin-top: -60px;
     margin-bottom: -30px;
+}
+
+.escuro .quarto{
+    color: var(--white);
+}
+
+.escuro .setimo-p{
+    color: var(--white);
+}
+
+.escuro .oitavo-p{
+    color: var(--white);
+}
+.escuro .botao-6{
+    color: var(--white);
+    background: var(--low-green);
+}
+.escuro .botao-7{
+    color: var(--white);
+    background: var(--low-green);
 }
 
 .quarto{
@@ -571,6 +656,26 @@ nav a {
     display: block;
     margin-top: -60px;
     margin-bottom: -30px;
+}
+
+.escuro .quinto{
+    color: var(--white);
+}
+
+.escuro .nono-p{
+    color: var(--white);
+}
+
+.escuro .decimo-p{
+    color: var(--white);
+}
+.escuro .botao-8{
+    color: var(--white);
+    background: var(--low-green);
+}
+.escuro .botao-9{
+    color: var(--white);
+    background: var(--low-green);
 }
 
 .quinto{

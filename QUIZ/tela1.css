@@ -13,13 +13,37 @@
     box-sizing: border-box;
 }
 
+body{
+    background: var(--white);
+    transition: 0.2s linear;
+}
+
+body.escuro{
+    background: var(--low-greenb);
+}
+
+.escuro ul li {
+    background: var(--dark-green);
+}
+
+.inicio.escuro{
+    background: var(--dark-green);
+}
+
+.escuro .botao-1{
+    background-color: var(--low-green);
+    color: var(--white);
+}
+
 :root {
     --light-green: #E4E6D9;
     --green: #C0CFB2;
     --dark-green: #648A70;
     --white: #fff;
+    --low-greenb: rgb(69, 98, 78, 0.6);
     --low-green: #45624E;
     --red:#A9877C;
+    --medium-green: rgb(152, 190, 164, 0.6);
 }
 
 header {
@@ -94,22 +118,26 @@ nav a {
     z-index: 3;    
 }
 
-.menu{
+.menu-items {
     position: relative;
-    top: 4.0625rem;
-    display: inline-block;
-    width: 110px;
-    height: 110px;
-    padding: 10px;
-    line-height: 1;
-    border: none;
-    background: none;
-    cursor: pointer;
+    top: 100px;
+    left: -10px;
+    
 }
 
-.menu-login img {
-    width: 100%;
-    height: auto;
+.aceso-apagado{
+    border: none;
+    font-size: 10px;
+    background: var(--green);
+    color: var(--white);
+    letter-spacing: 5px;
+    padding: 15px 5px;
+    border-radius: 25px;
+}
+
+.escuro .aceso-apagado{
+    background: var(--dark-green);
+    color: var(--white);
 }
 
 .imagens {
@@ -118,6 +146,34 @@ nav a {
     width: 100%;
 }
 
+.escuro .titulo{
+    color: var(--white);
+}
+
+.escuro .titulo-2{
+    color: var(--white);
+    background: var(--low-green);
+}
+
+.escuro .botao-1{
+    color: var(--white);
+    background: var(--low-green);
+}
+
+.escuro .botao-2{
+    color: var(--white);
+    background: var(--low-green);
+}
+
+.escuro .botao-3{
+    color: var(--white);
+    background: var(--low-green);
+}
+
+.escuro .botao-4{
+    color: var(--white);
+    background: var(--low-green);
+}
 .titulo{
     position: relative;
     margin-top: -190px;
@@ -227,7 +283,17 @@ nav a {
     color: white;
 }
 
+.escuro .correct{
+    background-color: var(--medium-green);
+    color: white;
+}
+
 .incorrect {
+    background-color: var(--red);
+    color: white;
+}
+
+.escuro .incorrect {
     background-color: var(--red);
     color: white;
 }
@@ -238,8 +304,20 @@ nav a {
     color: var(--white);
 }
 
+.escuro .botao-1:hover{
+    background-color: var(--green);
+    transition: 0.2s;
+    color: var(--white);
+}
+
 .botao-2:hover{
     background-color: var(--low-green);
+    transition: 0.2s;
+    color: var(--white);
+}
+
+.escuro .botao-2:hover{
+    background-color: var(--green);
     transition: 0.2s;
     color: var(--white);
 }
@@ -250,9 +328,21 @@ nav a {
     color: var(--white);
 }
 
+.escuro .botao-3:hover{
+    background-color: var(--green);
+    transition: 0.2s;
+    color: var(--white);
+}
+
 .botao-4:hover{
     transition: 0.2s;
     background-color: var(--low-green);
+    color: var(--white);
+}
+
+.escuro .botao-4:hover{
+    background-color: var(--green);
+    transition: 0.2s;
     color: var(--white);
 }
 
@@ -292,4 +382,8 @@ nav a {
     height: auto;
     display: block;
     margin-top: 50px;
+}
+
+.escuro .fundo3{
+    opacity: 30%;
 }
