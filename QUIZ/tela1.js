@@ -54,6 +54,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             function showResult() {
+                const totalQuestions = quizData.length;
+                const incorrectAnswers = totalQuestions - correctAnswers;
+                const scorePercentage = Math.round((correctAnswers / totalQuestions) * 100);
+            
+                localStorage.setItem('correctAnswers', correctAnswers);
+                localStorage.setItem('incorrectAnswers', incorrectAnswers);
+                localStorage.setItem('scorePercentage', scorePercentage);
+            
                 setTimeout(() => {
                     window.location.href = 'telafi.html';
                 }, 3000); 

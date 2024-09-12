@@ -38,10 +38,10 @@ body.escuro{
 
 header {
     position: relative;
-    padding: 20px;
     display: flex;
     justify-content: center;
     margin-bottom: 0;
+    height: 50px;
 }
 
 ul{
@@ -53,8 +53,7 @@ ul{
 
 ul li {
     position: relative;
-    top: 90px;
-    left: -50px;
+    right: 60px;
     font-size: 30px;
     display: inline-block;
     margin: 0 10px; 
@@ -66,6 +65,10 @@ ul li {
 }
 
 .escuro ul li {
+    background: var(--low-green);
+}
+
+.escuro .inicio{
     background: var(--dark-green);
 }
 
@@ -79,7 +82,7 @@ nav a {
 .logo-inicio{
     position: relative;
     z-index: 3;
-    top: 240px;
+    top: 170px;
     left: 5px;
 }
 
@@ -100,7 +103,7 @@ nav a {
 .inicio{
     font-size: 40px;
     position: relative;
-    top: 140px;
+    top: 70px;
     left: -80px;
     background: var(--light-green);
     padding: 30px 35px;
@@ -113,13 +116,9 @@ nav a {
     z-index: 3;    
 }
 
-.inicio.escuro{
-    background: var(--dark-green);
-}
-
 .menu-items {
     position: relative;
-    top: 100px;
+    top: 5px;
     left: -10px;
     
 }
@@ -135,7 +134,7 @@ nav a {
 }
 
 .escuro .aceso-apagado{
-    background: var(--dark-green);
+    background: var(--low-green);
     color: var(--white);
 }
 
@@ -147,7 +146,7 @@ nav a {
 
 .titulo{
     position: relative;
-    top: 150px;
+    top: 250px;
     left: 50%; 
     transform: translate(-50%, -50%); 
     z-index: 7;
@@ -157,7 +156,7 @@ nav a {
     font-weight: 300;
     letter-spacing: 2px;
     color: var(--white);
-    margin-top: -380px;
+    margin-top: -440px;
 }
 
 .animais{
@@ -229,7 +228,7 @@ nav a {
     transform: translate(-50%, -50%);
     z-index: 8;
     text-align: center;
-    top: 120px;
+    top: 190px;
 }
 
 .botao {

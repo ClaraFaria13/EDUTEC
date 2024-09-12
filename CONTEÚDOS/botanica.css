@@ -22,14 +22,6 @@ body.escuro{
     background: var(--low-greenb);
 }
 
-.escuro ul li {
-    background: var(--dark-green);
-}
-
-.inicio.escuro{
-    background: var(--dark-green);
-}
-
 .escuro .botao-1{
     background-color: var(--low-green);
     color: var(--white);
@@ -71,6 +63,14 @@ ul li {
     background: var(--green);
     border-radius: 25px;
     letter-spacing: 5px;
+}
+
+.escuro ul li {
+    background: var(--low-green);
+}
+
+.escuro .botanica{
+    background: var(--dark-green);
 }
 
 
@@ -134,7 +134,7 @@ nav a {
 }
 
 .escuro .aceso-apagado{
-    background: var(--dark-green);
+    background: var(--low-green);
     color: var(--white);
 }
 

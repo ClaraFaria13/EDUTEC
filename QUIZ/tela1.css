@@ -75,6 +75,13 @@ ul li {
     letter-spacing: 5px;
 }
 
+.escuro ul li {
+    background: var(--low-green);
+}
+
+.escuro .quiz{
+    background: var(--dark-green);
+}
 
 nav a {
     text-decoration: none;
@@ -136,7 +143,7 @@ nav a {
 }
 
 .escuro .aceso-apagado{
-    background: var(--dark-green);
+    background: var(--low-green);
     color: var(--white);
 }
 
