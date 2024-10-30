@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (scorePercentage !== null) {
         document.querySelector('.lista li:nth-child(3)').textContent = `Pontuação final: ${scorePercentage}%`;
     }
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {

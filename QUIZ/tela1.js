@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 localStorage.setItem('correctAnswers', correctAnswers);
                 localStorage.setItem('incorrectAnswers', incorrectAnswers);
                 localStorage.setItem('scorePercentage', scorePercentage);
+
             
                 setTimeout(() => {
                     window.location.href = 'telafi.html';

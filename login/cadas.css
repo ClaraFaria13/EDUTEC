@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Just Another Hand", cursive;
+
+}
+
+:root {
+    --light-green: #E4E6D9;
+    --green: #C0CFB2;
+    --dark-green: #648A70;
+    --white: #fff;
+    --low-green: #45624E;
+    --low-greenb: rgb(69, 98, 78, 0.6);
+    --shade-green: rgb(100, 138, 112, 0.4);
+    --shade-greenb1: rgb(100, 138, 112, 0.3);
+    --shade-greenb: rgb(100, 138, 112, 0.2);
+}
+
+body{
+    background: url(../index.html);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 20px;
+}
+
+.form1{
+    display: flex;
+    width: 850px;
+    height: 520px;
+    border: 3px solid var(--green);
+    border-radius: 30px;
+    background-color: var(--green);
+    color: var(--dark-green);
+
+}
+
+.form2{
+    position: relative;
+    
+    width: 90%;
+    height: 85%;
+    border: 3px solid var(--light-green);
+    background-color: var(--light-green);
+    border-radius: 30px;
+    margin-top: 39px;
+    margin-left: 40px;
+}
+
+.botbox{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -40px;
+    margin-left: 200px;
+    border: 1px solid var(--shade-greenb);
+    border-radius: 30px;
+    width: 48%;
+    background: var(--shade-greenb);
+    justify-content: space-between;
+}
+
+button{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 3px 27px;
+    border: none;
+    border-radius: 30px;
+    background: var(--shade-green);
+    color: var(--white);
+    box-shadow: 0 5px 10px var(--shade-greenb);
+    transition: .2;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.75;
+    color: var(--low-green);
+    background-color: var(--shade-greenb1);
+}
+
+.botlogin{
+    background-color: var(--shade-greenb1);
+}
+
+.formbox{
+    margin-top: 30px;
+    border: 1px solid;
+}
+
+.formtiitulo{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.forminput{
+    margin-left: 30px;
+}
