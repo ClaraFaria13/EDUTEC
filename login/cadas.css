@@ -40,7 +40,7 @@ body{
     border-radius: 30px;
     background-color: var(--green);
     color: var(--dark-green);
-
+    overflow: hidden;
 }
 
 .form2{
@@ -91,19 +91,115 @@ button:hover {
     background-color: var(--shade-greenb1);
 }
 
-.formbox{
+/*.formbox{
     margin-top: 30px;
-    border: 1px solid;
+}*/
+
+.formbox{
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    transition: .3s;
+}
+
+.cadasform{
+    left: 50%;
 }
 
 .formtiitulo{
     display: flex;
     justify-content: center;
+    margin: 35px 0;
     font-weight: 500;
     font-size: 40px;
-    margin-bottom: 20px;
 }
 
 .forminput{
-    margin-left: 30px;
+    margin-top: -20px;
+    margin-right: 350px;
+    width: 50%;
+}
+
+.inputbox{
+   position: relative;
+}
+
+.input1{
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 30px;
+    padding: 0 40px 0 20px;
+    box-shadow: 0 10px var(--shade-green);
+    border: none;
+    outline: none;
+    background: var(--green);
+}
+
+.inputfield{
+    font-size: 16px;
+    padding: 0 40px 0 20px;
+    outline: none;
+}
+
+::placeholder{
+    color: var(--dark-green);
+    font-size: 15px;
+}
+
+.inputbox .icone{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: var(--dark-green);
+    width: 17px;
+    height: 17px;
+
+}
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+    margin-left: 410px;
+    margin-top: -40px;
+}
+
+.cadas{
+    padding: 5px 80px;
+    background: var(--green);
+    box-shadow: 0 10px var(--shade-greenb1);
+}
+
+.loginform{
+    left: -50%;
+}
+
+.loginform, .formtiitulo{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+    font-weight: 500;
+    font-size: 40px; 
+}
+
+.loginform .forminput{
+    margin-right: 20px;
+    width: 50%;
+}
+
+.loginform .login{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.loginform .log{
+    padding: 5px 80px;
+    background: var(--green);
+    box-shadow: 0 10px var(--shade-greenb1);
 }

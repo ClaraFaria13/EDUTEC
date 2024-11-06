@@ -17,17 +17,17 @@
                 <button class="botcadastro" id="bot1">Cadastro</button>
                 <button class="botlogin" id="bot2">Login</button>
             </div>
-            <form action="" class="formbox">
+            <form action="" class="formbox cadasform">
                 <div class="formtiitulo">
                     <span>Cadastro</span>
                 </div>
                 <div class="forminput">
                     <div class="inputbox">
-                        <input type="text" class="input1" placeholder="Nome" required>
+                        <input type="text" class="input1 inputfield" placeholder="Nome" required>
                         <ion-icon name="person-outline" class="icone"></ion-icon>
                     </div>
                     <div class="inputbox">
-                        <input type="date" class="input1" placeholder="Idade" required>
+                        <input type="datetime" class="input1" placeholder="Idade" required>
                         <ion-icon name="calendar-outline" class="icone"></ion-icon>
                     </div>
                     <div class="inputbox">
@@ -43,10 +43,32 @@
                         <ion-icon name="lock-closed-outline" class="icone"></ion-icon>
                     </div>
                 </div>
+                <div class="cadastro">
+                    <button class="cadas" >Cadastrar-se</button>
+                </div>
             </form>
+
+            <form action="" class="formbox loginform">
+                <div class="formtiitulo">
+                    <span>Login</span>
+                </div>
+                <div class="forminput">
+                    <div class="inputbox">
+                        <input type="email" class="input1" placeholder="E-mail" required>
+                        <ion-icon name="mail-outline" class="icone"></ion-icon>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" class="input1" placeholder="Senha" required>
+                        <ion-icon name="lock-closed-outline" class="icone"></ion-icon>
+                    </div>
+                </div>
+                <div class="login">
+                    <button class="log" >Entrar</button>
+                </div>
+            </form>
+
         </div>
     </div>
-    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
