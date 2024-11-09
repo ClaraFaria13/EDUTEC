@@ -1,6 +1,3 @@
-function navegarPara(pagina) {
-    window.location.href = pagina;
-}
 
   document.addEventListener("DOMContentLoaded", function() {
     const button = document.getElementById("escuro");
