@@ -112,7 +112,6 @@ nav a {
     position: relative;
     bottom: 60px;
     left: -10px;
-    
 }
 
 .aceso-apagado{
@@ -179,6 +178,66 @@ nav a {
     color: var(--dark-green);
 }
 
+.titulo-2{
+    position: relative;
+    margin-top: -120px;
+    margin-left: 80px;
+    bottom: 150px;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    color: var(--dark-green);
+}
+
+table {
+    letter-spacing: 4px;
+    font-weight: 300;
+    width: 50%;
+    margin-left: 650px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  thead {
+    background-color: var(--low-green);
+    color: var(--light-green);
+  }
+
+  th, td {
+    padding: 12px;
+    border: 1px solid var(--white);
+    text-align: center;
+  }
+
+  th {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: var(--white);
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: var(--white);
+  }
+
+  .gold {
+    background-color: gold;
+    font-weight: bold;
+  }
+
+  .silver {
+    background-color: silver;
+    font-weight: bold;
+  }
+
+  .bronze {
+    background-color: #cd7f32; 
+    font-weight: bold;
+  }
+
 #confetti {
     position: absolute;
     width: 100%;
@@ -196,7 +255,6 @@ nav a {
     transform-origin: center;
 }
 
-/* Animação dos confetes */
 @keyframes fall {
     0% {
         opacity: 1;

@@ -37,23 +37,14 @@ body.escuro{
 }
 
 header {
-    position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 0;
     height: 50px;
 }
 
-ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-
 ul li {
     position: relative;
-    right: 60px;
+    right: 50px;
     font-size: 30px;
     display: inline-block;
     margin: 0 10px; 
@@ -104,7 +95,7 @@ nav a {
     font-size: 40px;
     position: relative;
     top: 70px;
-    left: -80px;
+    left: -50px;
     background: var(--light-green);
     padding: 30px 35px;
     margin: 10px 5px;
@@ -120,7 +111,15 @@ nav a {
     position: relative;
     top: 5px;
     left: -10px;
-    
+}
+
+.entrar {
+    max-width: 60px;
+}
+
+.entrar2 {
+    background: none;
+    border: none;
 }
 
 .aceso-apagado{

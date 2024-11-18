@@ -3,7 +3,6 @@ import connection from './database.js';
 
 const router = express.Router();
 
-// Rota de cadastro
 router.post('/register', async (req, res) => {
   const { username, password, email } = req.body;
 
@@ -20,7 +19,7 @@ router.post('/register', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-  const { email, password } = req.body; // Altere 'username' para 'email'
+  const { email, password } = req.body; 
   
 
   try {
@@ -42,5 +41,3 @@ router.post('/login', async (req, res) => {
 
 
 export default router;
-
-

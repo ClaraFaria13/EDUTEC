@@ -1,5 +1,8 @@
-
-  document.addEventListener("DOMContentLoaded", function() {
+function navegarPara(pagina) {
+    window.location.href = pagina;
+}
+ 
+ document.addEventListener("DOMContentLoaded", function() {
     const button = document.getElementById("escuro");
     const imagem = document.getElementById("img-clara");
     const imagem2 = document.getElementById("img-clara2");

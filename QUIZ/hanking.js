@@ -23,8 +23,41 @@ document.addEventListener("DOMContentLoaded", function() {
           imagem.src = '../IMG/fundo.png'; 
           imagem2.src = '../IMG/fundo2.png';
       }
+
+      async function loadRanking() {
+        try {
+          const response = await fetch('http://localhost:3000/ranking');
+          const ranking = await response.json();
+      
+          const table = document.getElementById('ranking-table');
+          table.innerHTML = ''; 
+      
+          ranking.forEach((player, index) => {
+            const row = document.createElement('tr');
+      
+            if (index === 0) {
+              row.classList.add('gold');
+            } else if (index === 1) {
+              row.classList.add('silver'); 
+            } else if (index === 2) {
+              row.classList.add('bronze');
+            }
+      
+            row.innerHTML = `
+              <td>${index + 1}</td>
+              <td>${player.name}</td>
+              <td>${player.score}</td>
+            `;
+      
+            table.appendChild(row);
+          });
+        } catch (err) {
+          console.error('Erro ao carregar o ranking:', err);
+        }
+      }
   });
   })
+
 
 function createConfetti() {
     const confettiContainer = document.getElementById("confetti");

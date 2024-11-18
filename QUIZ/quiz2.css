@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Just Another Hand", cursive;
+}
+
+.conteudo {
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    width: auto; 
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--white);
+    transition: 0.2s linear;
+}
+
+body.escuro{
+    background: var(--low-greenb);
+}
+
+.escuro .botao-1{
+    background-color: var(--low-green);
+    color: var(--white);
+}
+
+:root {
+    --light-green: #E4E6D9;
+    --green: #C0CFB2;
+    --dark-green: #648A70;
+    --white: #fff;
+    --low-green: #45624E;
+    --low-greenb: rgb(69, 98, 78, 0.6);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    position: relative;
+    top: 90px;
+    left: -110px;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 10px; 
+    padding: 10px 34px;
+    margin-bottom: 0;
+    background: var(--green);
+    border-radius: 25px;
+    letter-spacing: 5px;
+}
+
+.escuro ul li {
+    background: var(--low-green);
+}
+
+.escuro .quiz{
+    background: var(--dark-green);
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--white);
+
+}
+
+.logo-inicio{
+    position: relative;
+    z-index: 3;
+    top: 15rem;
+    left: 0.3125px;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    max-width: 120px;
+    width: auto;
+}
+
+.conteudos{
+    display: flex;
+    align-items: flex-start; 
+}
+
+.quiz{
+    font-size: 40px;
+    position: relative;
+    top: 9.375rem;
+    right: 2.8125px;
+    background: var(--light-green);
+    padding: 30px 25px;
+    margin: 10px 5px;
+    border-radius: 25px;
+    margin: 20px 0; 
+    margin-left: -1.25rem;
+    margin-bottom: 0;
+    display: inline-block;
+    z-index: 3;    
+}
+
+.menu-items {
+    position: relative;
+    top: 100px;
+    left: -10px;
+    
+}
+
+.aceso-apagado{
+    border: none;
+    font-size: 10px;
+    background: var(--green);
+    color: var(--white);
+    letter-spacing: 5px;
+    padding: 15px 5px;
+    border-radius: 25px;
+}
+
+.escuro .aceso-apagado{
+    background: var(--low-green);
+    color: var(--white);
+}
+
+.imagens {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.escuro .titulo{
+    color: var(--white);
+}
+
+.escuro .primeiro-p{
+    color: var(--white);
+}
+
+.escuro .segundo-p{
+    color: var(--white);
+}
+
+.titulo{
+    position: relative;
+    left: 80px;
+    z-index: 3;
+    display: grid;
+    font-size: 75px;
+    grid-area: 1 / 1;
+    height: auto;
+    margin-top: -200px;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr 1fr;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin-left: -47px;
+    color: var(--dark-green);
+}
+
+.primeiro-p{
+    position: relative;
+    margin-top: -150px;
+    font-size: 30px;
+    bottom: 150px;
+    color: var(--dark-green);
+    list-style: none;
+}
+
+.segundo-p{
+    position: relative;
+    margin-left: 170px;
+    bottom: 50px;
+    font-size: 30px;
+    color: var(--dark-green);
+    list-style: none;
+}
+
+.botoes {
+    position: relative;
+    bottom: 20px;
+    z-index: 3;
+    text-align: center;
+    font-size: 30px;
+}
+
+.botao-1 {
+    display: inline-block;
+    padding: 5px 90px;
+    text-decoration: none;
+    border-radius: 35px;
+    transition: background-color 0.3s;
+    background-color: var(--green);
+    color: var(--dark-green);
+}
+
+.fundo {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: -50px;
+}
+
+.fundo2 {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.fundo3{
+    grid-area: 1 / 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.escuro .fundo3{
+    opacity: 30%;
+}
