@@ -39,29 +39,51 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         
-async function getUser() {
-    try {
-        const response = await fetch('/getUser');
-        const data = await response.json();
-        const nomeUsuario = document.getElementById("nomeUsuario");
+        async function getUser() {
+            const token = localStorage.getItem('token');  // Recuperando o token
+          
+            if (!token) {
+              alert('Usuário não autenticado');
+              return;
+            }
+          
+            try {
+              const response = await fetch('/getUser', {
+                headers: {
+                  'Authorization': `Bearer ${token}`  // Enviando o token no cabeçalho
+                }
+              });
+          
+              const data = await response.json();
+          
+              if (data.loggedIn) {
+                const nomeUsuario = document.getElementById('nomeUsuario');
+                nomeUsuario.textContent = `Olá, ${data.user.nome}`;
+              } else {
+                alert('Usuário não autenticado');
+              }
+            } catch (error) {
+              console.error('Erro ao obter o usuário:', error);
+            }
+          }
+          
+        getUser();
 
-        if (data.loggedIn && nomeUsuario) {
-            nomeUsuario.textContent = `Olá, ${nomeUsuario}`;
-        }
-    } catch (error) {
-        console.error('Erro ao obter o usuário:', error);
-    }
-}
-
-const logoutButton = document.getElementById('logout');
-if (logoutButton) {
-    logoutButton.addEventListener('click', async () => {
-        await fetch('/logout', { method: 'POST' });
-        window.location.href = '/index.html'; 
-    });
-}
-
-getUser();
-
+          document.getElementById('logoutButton').addEventListener('click', async () => {
+            try {
+              const response = await fetch('/logout', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+              });
+      
+              const result = await response.json();
+              alert(result.message);
+              if (response.ok) {
+                window.location.href = '/index.html'; // Redireciona para a página de login
+              }
+            } catch (error) {
+              console.error('Erro ao realizar logout:', error);
+            }
+          });
     });
 });

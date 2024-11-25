@@ -34,18 +34,22 @@ app.get('/isLoggedIn', (req, res) => {
   }
 });
 
-app.get('/logout', (req, res) => {
-  req.session.destroy((err) => {
-    if (err) {
-      return res.send('Erro ao fazer logout');
-    }
-    res.send('Logout realizado com sucesso');
-  });
+app.post('/logout', (req, res) => {
+  if (req.session) {
+    req.session.destroy((err) => {
+      if (err) {
+        console.error('Erro ao encerrar a sessão:', err);
+        return res.status(500).json({ message: 'Erro ao fazer logout' });
+      }
+      res.clearCookie('session_cookie_name');
+      return res.status(200).json({ message: 'Logout realizado com sucesso!' });
+    });
+  } else {
+    return res.status(200).json({ message: 'Usuário já está deslogado' });
+  }
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
-
-

@@ -44,45 +44,48 @@ const enviarCadastro = async (e) => {
 
 // Função para enviar dados de login para o backend
 const enviarLogin = async (e) => {
-    e.preventDefault();
-  
-    const emailInput = document.querySelector(".loginform input[type='email']");
-    const senhaInput = document.querySelector(".loginform input[type='password']");
-  
-    if (!emailInput || !senhaInput) {
-      console.error("Elementos de email ou senha não encontrados.");
-      alert("Erro no formulário de login.");
-      return;
-    }
-  
-    const email = emailInput.value;
-    const senha = senhaInput.value;
-  
-    console.log("Enviando dados de login:", { email, senha });
-  
-    try {
-      const response = await fetch('http://localhost:3000/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email: email, password: senha }),
-      });
-  
-      const data = await response.json();
-      console.log("Resposta do servidor:", data);
-  
-      if (response.status === 200) {
-        alert(data.message);
-        window.location.href = '../CONTEÚDOS/conteudo.html';
-      } else {
-        alert(data.error || "Erro ao fazer login!");
-      }
-    } catch (error) {
-      console.error("Erro no login:", error);
-      alert("Erro ao fazer login");
-    }
-  };
+  e.preventDefault();
+
+  const emailInput = document.querySelector(".loginform input[type='email']");
+  const senhaInput = document.querySelector(".loginform input[type='password']");
+
+  if (!emailInput || !senhaInput) {
+    console.error("Elementos de email ou senha não encontrados.");
+    alert("Erro no formulário de login.");
+    return;
+  }
+
+  const email = emailInput.value;
+  const senha = senhaInput.value;
+
+  console.log("Enviando dados de login:", { email, senha });
+
+  try {
+    const response = await fetch('http://localhost:3000/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: email, password: senha }),
+    });
+
+    const data = await response.json();
+    console.log("Resposta do servidor:", data);
+
+    if (response.status === 200) {
+    // Caso a resposta seja positiva, armazena o token e redireciona o usuário
+    localStorage.setItem('token', data.token); // Armazenamento do token no localStorage
+    alert(data.message); // Mensagem de sucesso
+    window.location.href = '../CONTEÚDOS/conteudo.html'; // Redireciona para a página inicial
+  } else {
+    // Caso ocorra algum erro
+    alert(data.error || "Erro ao fazer login.");
+  }
+} catch (error) {
+  console.error("Erro ao fazer login:", error);
+  alert("Erro ao fazer login.");
+}
+};
 
 loginBotao.addEventListener('click', () => {
   loginBotao.style.backgroundColor = "rgb(69, 98, 78, 0.6)";
