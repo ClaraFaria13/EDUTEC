@@ -3,20 +3,20 @@ import connection from './database.js';
 import jwt from 'jsonwebtoken';
 
 const router = express.Router();
-const secret = 'ola_mundo';  // Defina um segredo seguro para a geração do JWT
+const secret = 'ola_mundo'; 
 const verifyToken = (req, res, next) => {
-  const token = req.headers.authorization && req.headers.authorization.split(' ')[1];  // Obtendo o token no cabeçalho
+  const token = req.headers.authorization && req.headers.authorization.split(' ')[1]; 
 
   if (!token) {
     return res.status(401).json({ error: 'Token não fornecido' });
   }
 
-  // Verificando o token
+
   jwt.verify(token, secret, (err, decoded) => {
     if (err) {
       return res.status(401).json({ error: 'Token inválido ou expirado' });
     }
-    req.userId = decoded.userId;  // Passa o ID do usuário para a próxima etapa
+    req.userId = decoded.userId; 
     next();
   });
 };
@@ -48,14 +48,13 @@ router.post('/login', async (req, res) => {
     );
 
     if (rows.length > 0) {
-      const user = rows[0]; // Considera que o primeiro usuário retornado é o correto
+      const user = rows[0]; 
 
-      // Gerando o token JWT com o ID do usuário
       const token = jwt.sign({ userId: user.id }, secret, { expiresIn: '1h' });
 
       res.json({ 
   	message: 'Login bem-sucedido!',
-  	token: token,  // Envia o token para o frontend 
+  	token: token, 
       });
 
     } else {
@@ -68,21 +67,19 @@ router.post('/login', async (req, res) => {
 });
 
 router.get('/getUser', (req, res) => {
-  const token = req.headers.authorization && req.headers.authorization.split(' ')[1];  // Obtendo o token no cabeçalho
+  const token = req.headers.authorization && req.headers.authorization.split(' ')[1]; 
 
   if (!token) {
     return res.status(401).json({ error: 'Token não fornecido' });
   }
 
-  // Verificando o token
   jwt.verify(token, secret, (err, decoded) => {
     if (err) {
       return res.status(401).json({ error: 'Token inválido ou expirado' });
     }
 
-    const userId = decoded.userId;  // ID do usuário decodificado a partir do token
+    const userId = decoded.userId; 
 
-    // Buscar dados do usuário no banco de dados
     connection.execute(
       'SELECT * FROM users_lg WHERE id = ?',
       [userId],
@@ -101,8 +98,7 @@ router.get('/getUser', (req, res) => {
           user: {
             id: user.id,
             nome: user.nome,
-            email: user.email,  // Adicione os campos necessários
-            // Outros campos
+            email: user.email,
           },
         });
       }

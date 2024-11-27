@@ -3,9 +3,8 @@ const loginBotao = document.querySelector("#bot2");
 const cadasForm = document.querySelector(".cadasform");
 const loginForm = document.querySelector(".loginform");
 
-// Função para enviar dados de cadastro para o backend
 const enviarCadastro = async (e) => {
-  e.preventDefault(); // Impede o comportamento padrão do formulário
+  e.preventDefault(); 
 
   const nome = document.querySelector("#nome input").value;
   const idade = document.querySelector("#idade input").value;
@@ -13,7 +12,6 @@ const enviarCadastro = async (e) => {
   const senha = document.querySelector("#senha input").value;
   const confSenha = document.querySelector("#confSenha input").value;
 
-  // Validar se a senha e a confirmação de senha são iguais
   if (senha !== confSenha) {
     alert("As senhas não coincidem.");
     return;
@@ -31,8 +29,8 @@ const enviarCadastro = async (e) => {
     const data = await response.json();
     if (response.status === 201) {
       alert(data.message);
-      // Redireciona para a página inicial (ou qualquer outra página)
-      window.location.href = '../CONTEÚDOS/conteudo.html';  // Altere para a URL desejada
+      
+      window.location.href = '../CONTEÚDOS/conteudo.html';  
     } else {
       alert(data.error || "Erro ao cadastrar!");
     }
@@ -42,7 +40,7 @@ const enviarCadastro = async (e) => {
   }
 };
 
-// Função para enviar dados de login para o backend
+
 const enviarLogin = async (e) => {
   e.preventDefault();
 
@@ -73,10 +71,9 @@ const enviarLogin = async (e) => {
     console.log("Resposta do servidor:", data);
 
     if (response.status === 200) {
-    // Caso a resposta seja positiva, armazena o token e redireciona o usuário
-    localStorage.setItem('token', data.token); // Armazenamento do token no localStorage
-    alert(data.message); // Mensagem de sucesso
-    window.location.href = '../CONTEÚDOS/conteudo.html'; // Redireciona para a página inicial
+    localStorage.setItem('token', data.token); 
+    alert(data.message); 
+    window.location.href = '../CONTEÚDOS/conteudo.html'; 
   } else {
     // Caso ocorra algum erro
     alert(data.error || "Erro ao fazer login.");
@@ -109,6 +106,5 @@ cadasBotao.addEventListener('click', () => {
   cadasForm.style.opacity = 1;
 });
 
-// Adiciona o evento de envio para os formulários
 document.querySelector(".cadasform .cadas").addEventListener("click", enviarCadastro);
 document.querySelector(".loginform .log").addEventListener("click", enviarLogin);

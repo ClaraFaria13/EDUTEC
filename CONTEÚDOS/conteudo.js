@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         
         async function getUser() {
-            const token = localStorage.getItem('token');  // Recuperando o token
+            const token = localStorage.getItem('token'); 
           
             if (!token) {
               alert('Usuário não autenticado');
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
             try {
               const response = await fetch('/getUser', {
                 headers: {
-                  'Authorization': `Bearer ${token}`  // Enviando o token no cabeçalho
+                  'Authorization': `Bearer ${token}`
                 }
               });
           
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
               const result = await response.json();
               alert(result.message);
               if (response.ok) {
-                window.location.href = '/index.html'; // Redireciona para a página de login
+                window.location.href = '/index.html';
               }
             } catch (error) {
               console.error('Erro ao realizar logout:', error);

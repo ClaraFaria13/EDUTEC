@@ -67,12 +67,10 @@ function createConfetti() {
         const confetti = document.createElement("div");
         confetti.classList.add("confetti-piece");
 
-        // Cor e tamanho aleatórios
         confetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
         confetti.style.width = `${Math.random() * 10 + 5}px`;
         confetti.style.height = `${Math.random() * 20 + 10}px`;
 
-        // Posição inicial aleatória
         confetti.style.left = `${Math.random() * 100}vw`;
         confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
         confetti.style.animationDelay = `${Math.random() * 5}s`;
